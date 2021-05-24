@@ -129,3 +129,8 @@
 # These clases contain references to cordova webView
 -keep class com.ionicframework.cordova.webview.** {*; }
 -keep class com.ionicframework.cordova.webview.*
+
+# These clases are needed by the cordova firebase plugin
+-keep class by.chemerisuk.cordova.firebase.** {*; }
+-keep class by.chemerisuk.cordova.firebase.*
+
