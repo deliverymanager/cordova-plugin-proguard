@@ -63,22 +63,6 @@
 -dontwarn com.android.installreferrer.api.**
 -keep class com.google.android.gms.ads.identifier.** { *; }
 
-# I NEED THE FOLLOWING FOR THE FIREBASE AUTH VERIFICASTION
--keep class com.google.android.gms.tasks.OnCompleteListener.** { *; }
--keep class com.google.android.gms.tasks.Task.** { *; }
--keep class com.google.firebase.auth.AuthCredential.** { *; }
--keep class com.google.firebase.auth.FacebookAuthProvider.** { *; }
--keep class com.google.firebase.auth.FirebaseAuth.** { *; }
--keep class com.google.firebase.auth.FirebaseUser.** { *; }
--keep class com.google.firebase.auth.FirebaseAuth.AuthStateListener.** { *; }
--keep class com.google.firebase.auth.GoogleAuthProvider.** { *; }
--keep class com.google.firebase.auth.PhoneAuthCredential.** { *; }
--keep class com.google.firebase.auth.PhoneAuthOptions.** { *; }
--keep class com.google.firebase.auth.PhoneAuthProvider.** { *; }
--keep class com.google.firebase.auth.TwitterAuthProvider.** { *; }
--keep class com.google.firebase.auth.UserProfileChangeRequest.** { *; }
--keep class com.google.firebase.FirebaseException.** { *; }
-
 -keep class com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader { java.lang.ClassLoader sClassLoader; }
 
 # I ADDED THE FOLLOWING
@@ -145,15 +129,6 @@
 # These clases contain references to cordova webView
 -keep class com.ionicframework.cordova.webview.** {*; }
 -keep class com.ionicframework.cordova.webview.*
-
-# These clases are needed by the cordova firebase plugin
--keep class by.chemerisuk.cordova.firebase.** {*; }
--keep class by.chemerisuk.cordova.firebase.*
-
-
-# These clases are needed by the cordova-plugin-firebase-authentication plugin
--keep class by.chemerisuk.cordova.support.CordovaMethod.** {*; }
--keep class by.chemerisuk.cordova.support.CordovaMethod.*
 
 -keep class by.chemerisuk.cordova.support.ReflectiveCordovaPlugin.** {*; }
 -keep class by.chemerisuk.cordova.support.ReflectiveCordovaPlugin.*
